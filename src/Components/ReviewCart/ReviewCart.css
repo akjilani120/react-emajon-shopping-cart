@@ -1,0 +1,29 @@
+.review-items{
+    
+    display: grid ;
+    grid-template-columns: repeat(3,  1fr);
+    width: 70%;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 10px;
+    border-radius: 5px ;
+    height: 100px;
+}
+p{
+    margin: 0;
+}
+.delete-btn{
+    text-align: end;
+    font-size: 25px;
+    background-color: silver;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    color:  red;
+    cursor: pointer;
+    
+}
+.delete-head{
+    text-align: end;
+    padding: 5px 0px;
+}

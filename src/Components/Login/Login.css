@@ -1,0 +1,71 @@
+.form-container {
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    border: solid 2px silver;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding-bottom: 20px;
+
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.form-title {
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 30px;
+}
+
+.input-group label , .signOutLink{
+    display: block;
+    font-size: 18px;
+    color: rgb(255, 173, 67);
+}
+.signOutLink{
+    display: inline;
+    text-decoration: none;
+    font-weight: 600;
+}
+.input-group input {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px rgb(206, 198, 187);
+    font-size: 20px;
+
+
+}
+.input-group input:focus{
+    outline: none;
+}
+
+.input-group .signOutLink {
+    color: rgb(255, 175, 70);
+}
+
+ .submit, .googleLogIn {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px rgb(255, 195, 116);
+    font-size: 20px;
+    background-color: rgb(246, 163, 55);
+    color: white;
+    cursor: pointer;
+}
+.googleLogIn{
+    width: 360px;
+    text-align:center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.googlelogo{
+    width: 50px;
+    height: 30px;
+   
+}

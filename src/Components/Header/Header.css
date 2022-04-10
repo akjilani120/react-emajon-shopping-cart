@@ -19,3 +19,6 @@
 background-color: antiquewhite;
 color: rgb(22, 71, 66);
 }
+.nav-list{
+    display: flex;
+}
