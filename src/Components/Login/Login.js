@@ -1,25 +1,29 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+ import React, { useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img from './logo.png'
 import './Login.css'
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
+
 const Login = () => {
     const [email, setEmail]= useState('')
     const [password, setPassword]= useState('')
+    
     const [
         signInWithEmailAndPassword,
         user,
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
-      const navigate =useNavigate()
+    const navigate =useNavigate()
+    const location=useLocation()
+    const from =location?.state?.from?.pathname || "/"
     const handleEmailBluer = (event) =>{
         setEmail(event.target.value)
     }
     if(user){
-        navigate("/home")
+        navigate(from, {replace:true})
     }
     const handlePasswordBluer = (event) =>{
         setPassword(event.target.value)
@@ -30,6 +34,7 @@ const Login = () => {
     }
     return (
         <div className='form-container'>
+           
             <div>
                 <h2 className='form-title'>Login</h2>
                 <form onSubmit={handleSubmit}>

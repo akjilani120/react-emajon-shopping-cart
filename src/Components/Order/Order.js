@@ -22,7 +22,7 @@ const Order = () => {
             }
             </div>
             <div className='product-summery'>
-                <CartSub cart={cart} > <Link to='/inventory'>
+                <CartSub cart={cart} > <Link to='/shipping'>
                 <button>Order check out</button>
                 </Link> </CartSub>
             </div>
