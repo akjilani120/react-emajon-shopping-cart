@@ -14,3 +14,16 @@
     padding: 10px;
     
 }
+.page-count button{
+ padding: 5px;
+ margin: 2px;
+ cursor: pointer;
+ background-color: #fff;
+ font-size: 18px;
+ border: 1px solid orange;
+ 
+}
+.page-count .select {
+ background-color: orange;
+ color: white;
+}

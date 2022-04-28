@@ -10,15 +10,15 @@ const Order = () => {
     const [items, setItems]= CustomFunc()
     const [cart, setCart] = UseCart(items)
     const handleAddData =(product) =>{
-        const rest = cart.filter( pd => pd.id !== product.id)
+        const rest = cart.filter( pd => pd._id !== product._id)
         setCart(rest)
-        removeFromDb(product.id)
+        removeFromDb(product._id)
     }
     return (
         <div className='products'>
             <div className='review-container' >
             {
-                cart.map(product => <ReviewCart product={product} key={product.id} handleAddData={handleAddData}></ReviewCart>  )
+                cart.map(product => <ReviewCart product={product} key={product._id} handleAddData={handleAddData}></ReviewCart>  )
             }
             </div>
             <div className='product-summery'>
